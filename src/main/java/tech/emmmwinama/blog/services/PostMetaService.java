@@ -1,10 +1,12 @@
 package tech.emmmwinama.blog.services;
 
+import org.springframework.stereotype.Service;
 import tech.emmmwinama.blog.models.PostMeta;
 
 import java.util.ArrayList;
 import java.util.List;
 
+@Service
 public class PostMetaService {
     private static List<PostMeta> PostMetas = new ArrayList<>();
 

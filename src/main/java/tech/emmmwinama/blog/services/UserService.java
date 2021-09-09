@@ -1,10 +1,12 @@
 package tech.emmmwinama.blog.services;
 
+import org.springframework.stereotype.Service;
 import tech.emmmwinama.blog.models.User;
 
 import java.util.ArrayList;
 import java.util.List;
 
+@Service
 public class UserService {
     private static List<User> users = new ArrayList<>();
 

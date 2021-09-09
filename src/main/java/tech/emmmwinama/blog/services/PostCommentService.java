@@ -1,10 +1,12 @@
 package tech.emmmwinama.blog.services;
 
+import org.springframework.stereotype.Service;
 import tech.emmmwinama.blog.models.PostComment;
 
 import java.util.ArrayList;
 import java.util.List;
 
+@Service
 public class PostCommentService {
     private static List<PostComment> PostComments = new ArrayList<>();
 

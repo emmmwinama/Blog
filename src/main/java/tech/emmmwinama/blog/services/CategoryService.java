@@ -1,10 +1,12 @@
 package tech.emmmwinama.blog.services;
 
+import org.springframework.stereotype.Service;
 import tech.emmmwinama.blog.models.Category;
 
 import java.util.ArrayList;
 import java.util.List;
 
+@Service
 public class CategoryService {
     private static List<Category> Categories = new ArrayList<>();
 
