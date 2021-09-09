@@ -15,4 +15,14 @@ public class UserService {
     public List<User> getUsers(){
         return users;
     }
+
+    public User getUser(String id){
+        for(User user: users){
+            if(user.getId().equals(id)){
+                return user;
+            }
+        }
+
+        return null;
+    }
 }

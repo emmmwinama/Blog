@@ -1,6 +1,7 @@
 package tech.emmmwinama.blog.models;
 
 public class PostCategory {
+    private String id;
     private String postId;
     private String categoryId;
 
@@ -12,6 +13,14 @@ public class PostCategory {
     public PostCategory() {
     }
 
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
 
     public String getPostId() {
         return postId;
@@ -41,6 +50,18 @@ public class PostCategory {
 
     @Override
     public boolean equals(Object obj) {
-        return super.equals(obj);
+        if (this == obj)
+            return true;
+        if (obj == null)
+            return false;
+        if (getClass() != obj.getClass())
+            return false;
+        PostCategory other = (PostCategory) obj;
+        if (id == null) {
+            if (other.id != null)
+                return false;
+        } else if (!id.equals(other.id))
+            return false;
+        return true;
     }
 }

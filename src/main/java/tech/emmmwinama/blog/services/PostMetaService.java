@@ -15,4 +15,14 @@ public class PostMetaService {
     public List<PostMeta> getPostMetas(){
         return PostMetas;
     }
+
+    public PostMeta getPostMeta(String id){
+        for(PostMeta postMeta: PostMetas){
+            if(postMeta.getId().equals(id)) {
+                return postMeta;
+            }
+        }
+
+        return null;
+    }
 }

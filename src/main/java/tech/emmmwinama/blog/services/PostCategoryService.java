@@ -15,4 +15,14 @@ public class PostCategoryService {
     public List<PostCategory> getPostCategories(){
         return PostCategories;
     }
+
+    public PostCategory getPostCategory(String id){
+        for(PostCategory postCategory: PostCategories){
+            if(postCategory.getId().equals(id)){
+                return postCategory;
+            }
+        }
+
+        return null;
+    }
 }

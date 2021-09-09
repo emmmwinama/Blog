@@ -15,4 +15,14 @@ public class CategoryService {
     public List<Category> getCategories(){
         return Categories;
     }
+
+    public Category getCategory(String id){
+        for(Category category: this.Categories){
+            if(category.getId().equals(id)){
+                return category;
+            }
+        }
+
+        return null;
+    }
 }

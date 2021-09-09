@@ -15,4 +15,14 @@ public class PostService {
     public List<Post> getPosts(){
         return Posts;
     }
+
+    public Post getPost(String id){
+        for(Post post: Posts){
+            if(post.getId().equals(id)){
+                return post;
+            }
+        }
+
+        return null;
+    }
 }
