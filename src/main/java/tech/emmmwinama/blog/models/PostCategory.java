@@ -5,7 +5,8 @@ public class PostCategory {
     private String postId;
     private String categoryId;
 
-    public PostCategory(String postId, String categoryId) {
+    public PostCategory(String id, String postId, String categoryId) {
+        this.id = id;
         this.postId = postId;
         this.categoryId = categoryId;
     }
