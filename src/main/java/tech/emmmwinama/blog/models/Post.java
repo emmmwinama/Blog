@@ -5,7 +5,7 @@ public class Post {
     private String authorId;
     private String parentId;
     private String title;
-    private String metaTitlte;
+    private String metaTitle;
     private String slug;
     private String summary;
     private boolean published;
@@ -14,12 +14,12 @@ public class Post {
     private String publishedAt;
     private String content;
 
-    public Post(String id, String authorId, String parentId, String title, String metaTitlte, String slug, String summary, boolean published, String createdAt, String updatedAt, String publishedAt, String content) {
+    public Post(String id, String authorId, String parentId, String title, String metaTitle, String slug, String summary, boolean published, String createdAt, String updatedAt, String publishedAt, String content) {
         this.id = id;
         this.authorId = authorId;
         this.parentId = parentId;
         this.title = title;
-        this.metaTitlte = metaTitlte;
+        this.metaTitle = metaTitle;
         this.slug = slug;
         this.summary = summary;
         this.published = published;
@@ -65,11 +65,11 @@ public class Post {
     }
 
     public String getMetaTitlte() {
-        return metaTitlte;
+        return metaTitle;
     }
 
-    public void setMetaTitlte(String metaTitlte) {
-        this.metaTitlte = metaTitlte;
+    public void setMetaTitle(String metaTitle) {
+        this.metaTitle = metaTitle;
     }
 
     public String getSlug() {
@@ -136,7 +136,7 @@ public class Post {
                 ", authorId='" + authorId + '\'' +
                 ", parentId='" + parentId + '\'' +
                 ", title='" + title + '\'' +
-                ", metaTitlte='" + metaTitlte + '\'' +
+                ", metaTitle='" + metaTitle + '\'' +
                 ", slug='" + slug + '\'' +
                 ", summary='" + summary + '\'' +
                 ", published=" + published +
