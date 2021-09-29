@@ -37,6 +37,6 @@ public class EmployeeController {
         employeeRepository.save(employee);
 
         //user redirection to prevent duplicate submissions
-        return "redirect:/employees/new";
+        return "redirect:/employees/";
     }
 }

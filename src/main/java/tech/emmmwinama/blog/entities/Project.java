@@ -5,6 +5,9 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
+import java.util.List;
+
 
 @Entity
 public class Project {
@@ -16,6 +19,9 @@ public class Project {
     private String name;
     private String stage;
     private String description;
+
+    @OneToMany(mappedBy="theProject")
+    private List<Employee> employees;
 
 
     // Constructors
@@ -30,6 +36,16 @@ public class Project {
     }
 
     //Getters and Setters
+
+
+    public List<Employee> getEmployees() {
+        return employees;
+    }
+
+    public void setEmployees(List<Employee> employees) {
+        this.employees = employees;
+    }
+
     public long getProjectId() {
         return projectId;
     }
